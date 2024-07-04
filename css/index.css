@@ -1,0 +1,181 @@
+*{box-sizing: border-box;}
+
+body{
+    background-color: #030303;
+    margin: 0 auto;
+    max-width: 1920px;
+    font-family: "Roboto", sans-serif;
+}
+
+body, nav, header, main, #containerUno, footer{width: 100%;}
+
+h1, h2, h3, h4, h5, h6{font-size: 28px; margin-top: 0; color: #fff; text-align: center;}
+h1{font-size: 40px;}
+
+nav{
+    height: 60px;
+    background-color: black;
+    position: relative;
+}
+
+#loguitoUno{
+    width: 145px;
+    position: absolute;
+    top:8px;
+    left:100px;
+}
+
+#loguitoUno img{width: 100%;}
+
+/* Munú de navegación */
+nav ul{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 100px;
+}
+
+nav ul a{color: white; text-decoration: none; margin:-2px;}
+
+nav ul li:hover{background-color: rgba(255, 255, 255, 0.1);}
+
+nav ul li{
+    width: auto;
+    height: 60px;
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 60px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+header{
+    height: 1000px;
+    position: relative;
+    background-color: #1c1c1c;
+
+    /* Propiedad para colocar una imagen de fondo */
+    background-image: url(../imagenes/banner.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#logo{
+    width: 450px;
+    position: absolute;
+    top: 100px;
+    left: 125px;
+}
+
+#logo img{width: 100%;}
+
+#btn{
+    width: 200px;
+    height: 40px;
+    background-color: #018bbc;
+    position: absolute;
+    top: 490px;
+    left: 245px;
+    border-radius: 8px;
+    box-shadow: 1px 12px 10px black;
+}
+
+#btn:hover{box-shadow: none;}
+
+#btn p{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    line-height: 40px;
+}
+
+main{padding: 50px 150px;}
+
+
+/* Formularop */
+
+#registrate{
+    margin-top:30px;
+}
+
+#divForm{
+    padding: 30px 30px;
+    margin: 30px 0px;
+    border-width: 10px;
+    border-style: dashed;
+    border-color: aqua;
+}
+
+form {
+    display: flex;
+    flex-direction: column ;
+    position: relative;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.campo{
+    margin-bottom: 2%;
+}
+
+
+label {color: aqua;}
+
+hr{width: 80%; border-color: rgba(255, 255, 255, 0.3);}
+
+#containerUno{
+    margin: 50px auto 75px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Cards */
+.card{
+    width: 23%;
+    height: 570px;
+    position: relative;
+    background-color: #1c1c1c;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+#c1{background-image: url(../imagenes/robot-oriental.webp);}
+#c2{background-image: url(../imagenes/dragon.webp);}
+#c3{background-image: url(../imagenes/tron.webp);}
+#c4{background-image: url(../imagenes/cyber.webp);}
+
+.card a{text-decoration: none;}
+
+.card h3{
+    font-size: 23px;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.7);
+    position: absolute;
+    bottom: 15px;
+    padding: 20px 0;
+}
+
+
+
+
+footer{
+    height: 650px;
+    background-color: black;
+}
+
+
+/*
+Hosting: (Fillezilla - FTP)
+
+Dirección del servidor - FTP.
+Nombre de Usuario.
+Contraseña.
+Puerto: 21.
+Nombre de la carpeta pública.
+*/

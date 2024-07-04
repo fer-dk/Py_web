@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Game Over | Aventuras sin limite ::</title>
+
+    <!-- Estilos CSS Externos -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="imagenes/favicon.ico">
+
+
+</head>
+<body>
+
+<nav>
+    <div id="loguitoUno">b
+        <img src="imagenes/loguito.png" alt="Logo de Game Over" title="Aventuras sin limite">
+    </div>
+
+    <ul>
+        <a href="#"><li>INICIO</li></a>
+        <a href="#"><li>VERSIONES</li></a>
+        <a href="#"><li>DESCARGAS</li></a>
+        <a href="#"><li>DESAFÍOS</li></a>
+        <a href="#"><li>CONTÁCTENOS</li></a>
+    </ul>
+</nav>
+
+
+<header>
+    <div id="logo">
+        <img src="imagenes/logo.png" alt="Logo de Game Over" title="Game Over - Aventuras sin limite">
+    </div>
+
+    <a href="#start" title="¡Jugá Ya!">
+        <div id="btn">
+            <p>¡Jugá Ya!</p>
+        </div>
+    </a>
+</header>
+
+
+<main>
+    <hr>
+
+    <h2 id="registrate">Para una mejor experiencia <br> Regístrate!!!! </h2>
+
+    <!-- El método GET se debe utilizar en los formularios que no modifican la información. (ej buscador) -->
+    <!-- El método POST se debería utilizar cuando el formulario modifica la información original (ej Login - insertar, modificar o borrar alguna información). -->
+
+    <div id="divForm">
+        <form action="php/codigo.php" method="post">
+            <div class="campo">
+                <label for="campoNombre">Nombre</label>
+                <input required name="nombre" type="text" id="campoNombre" placeholder="Sólo tu nombre">
+            </div>
+
+            <div class="campo">
+                <label for="campoApellido">Apellido</label>
+                <input required name="apellido" type="text" id="campoApellido">
+            </div>
+
+            <div class="campo">
+                <label for="campoEmail">E-mail</label>
+                <input type="email" name="mail" id="campoEmail" placeholder="info@dominio.com">
+            </div>
+
+            <div class="campo">
+                <label for="campoPass">Contraseña</label>
+                <input type="password" name="pass"  id="campoPass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+            </div>
+
+            <div class="campo">
+                <label for="campoEdad">Contraseña</label>
+                <input type="number" name="edad" id="campoEdad" min = "18" max="90">
+            </div>
+
+            <!-- Para que solo se pueda clikear uno de dos opciones agrupamos escribiendo el mismo nombre en la propiedad "name" -->
+            <div class="campo">
+                <label for="campoEcivil">Casado</label>
+                <input type="radio" value="casado" name="ecivil" id="campoEcivil" >
+                <label for="campoEcivil">Soltero</label>
+                <input type="radio" value="soltero" name="ecivil" id="campoEcivil" >
+            </div>
+
+            <div class="campo">
+                <label for="campoNac">Nacionalidad</label>
+                <select name="nacionalidad" id="campoNac">
+                    <!-- <option value="">Elegir</option> --> //
+                    <option value="paraguay">Paraguay</option>
+                    <option value="bolivia">Bolivia</option>
+                    <option value="argentina" selected>Argentina</option>
+                </select>
+            </div>
+
+            <!-- A pesar de pertenecer al mismo grupo podemos seleccionar mas de una opcion -->
+            <!-- El valor del atributo value, junto con el valor del atributo name, es la información que llega al servidor cuando el usuario envía el formulario -->
+            <div class="campo">
+                <label >Categoría</label>
+                <br>
+                <label for="campoCat"><input type="checkbox" name="preferencias" value="accion" id="campoCat" checked>Acción</label>
+                <label for="campoCat"><input type="checkbox" name="preferencias" value="deportes" id="campoCat">Deportes</label>
+                <label for="campoCat"><input type="checkbox" name="preferencias" value="estrategia" id="campoCat" >Estrategia</label>
+            </div>
+
+            <div class="campo">
+                <label for="campoPlat">Plataformas a utilizar</label>
+                <select name="plataformas" id="campoPlat" multiple>
+                    <!-- <option value="">Elegir</option> --> //
+                    <option value="ps5">PS5</option>
+                    <option value="xbos">XBox</option>
+                    <option value="switch" selected>Switch</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="campofa" name="facademica">Título académico</label>
+                <input type="file" name="facademica" id="campofa">
+            </div>
+
+            <div class="campo">
+                <label for="campoDescripcion">Breve descripción personal</label>
+                <textarea name="descripcion" id="campoDescripcion" cols="20" rows="5">Escriba aquí</textarea>
+            </div>
+
+            <button id="btnEnviar" type="submit"> Enviar</button>
+
+        </form>
+    </div>
+
+    <hr>
+
+    <h1 id="start">La mejor plataforma de Juegos Online de América</h1>
+    <h2>Estos son los 4 desafios de la semana, ¡elegí el tuyo!</h2>
+
+    <section id="containerUno">
+        <div class="card" id="c1">
+            <a href="#" title="Aventura en Oriente">
+                <h3>Aventura en Oriente</h3>
+            </a>
+        </div>
+
+        <div class="card" id="c2">
+            <a href="#" title="Aventura Medieval">
+                <h3>Aventura Medieval</h3>
+            </a>
+        </div>
+
+        <div class="card" id="c3">
+            <a href="#" title="Policia del Futuro">
+                <h3>Policia del Futuro</h3>
+            </a>
+        </div>
+
+        <div class="card" id="c4">
+            <a href="#" title="Cyber Punk">
+                <h3>Cyber Punk</h3>
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer></footer>
+
+</body>
+</html>
+<br>
