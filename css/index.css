@@ -7,6 +7,8 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
+
+
 body, nav, header, main, #containerUno, footer{width: 100%;}
 
 h1, h2, h3, h4, h5, h6{font-size: 28px; margin-top: 0; color: #fff; text-align: center;}
@@ -92,6 +94,14 @@ header{
     margin: 0;
     line-height: 40px;
 }
+
+iframe {
+    border: none; /* Elimina el borde del iframe */
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: 500px; /* Establece una altura fija */
+    border-radius: 8px; /* Agrega bordes redondeados al iframe */
+}
+
 
 main{padding: 50px 150px;}
 
