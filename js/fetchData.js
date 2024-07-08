@@ -1,8 +1,8 @@
 async function fetchGoogleSheetData() {
-    const response = await fetch('https://spreadsheets.google.com/feeds/list/2PACX-1vSCnyQM_VImmumm7EMurnxVDNRiTfK1PrdjFckrtLyWA4gqvIihfSBl_C5ftIYVbw/od6/public/values?alt=json');
+    const response = await fetch('https://spreadsheets.google.com/feeds/list/2PACX-1vT8UDyPBVKBBgsWdtSzqLttg4GF7ZmKFUe09meq_d6sbxJGhWDyDNZ54MV8Kmr8Vg/od6/public/values?alt=json');
     const data = await response.json();
     return data.feed.entry.map(entry => ({
-        time: entry['gsx$comunicación']['$t'], // Ajusta 'gsx$time' al nombre de tu columna
-        value: parseFloat(entry['gsx$enviosvalidos']['$t']) // Ajusta 'gsx$value' al nombre de tu columna
+        time: entry['gsx$Comunicación']['$t'], // Ajusta 'gsx$Comunicación' al nombre de tu columna
+        value: parseFloat(entry['gsx$Envios validos']['$t']) // Ajusta 'gsx$Envios validos' al nombre de tu columna
     }));
 }
